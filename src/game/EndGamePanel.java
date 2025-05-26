@@ -97,6 +97,7 @@ public class EndGamePanel extends JPanel {
         int subtitleWidth = fmSubtitle.stringWidth(subtitle);
         g2.drawString(subtitle, (960 - subtitleWidth) / 2, 230); // Centered
 
-        g2.dispose();
+        // Don't dispose the graphics context as it's needed for button rendering
+        // g2.dispose();
     }
 }
